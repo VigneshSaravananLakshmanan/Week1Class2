@@ -18,10 +18,16 @@ public class MissingElementInAnArray {
 			System.out.println(arr[i]);
 		}*/
 		
-		/*Required clarification
+		/*Required clarification - Arrays.sort() will sort the array in ascending order. Is it possible to 
+		 * save the result in another array ?
+		 * for eg:
 		 * int[] sorted = Arrays.sort(arr); */
 		
 //		
+		
+		/* Required Clarification: When I use the while statement, I am not getting the expected result. But on using the if loop in the below
+		 * code, the result is acheived. I am unable to plot the exact issue as for me both these functionality almost looks similar.
+		 */
 //		for (int i=1; i<=length;i++)
 //		{
 //			while(i!=arr[i-1])
@@ -29,6 +35,8 @@ public class MissingElementInAnArray {
 //				System.out.println(i);
 //				
 //			}
+		
+		/*Required assistance on how to set the break points and debug the flows*/
 			
 			for (int i=1; i<=length;i++)
 			{

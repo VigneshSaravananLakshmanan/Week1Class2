@@ -14,7 +14,7 @@ public class FindIntersection {
 				
 				if (set1[i]==set2[j])
 				{
-					/* Clarification: how to print the result in one single line */
+					/* Clarification: how to print the result in one single line? for example -The intersected value is 1,4, 7 */
 					System.out.println("The intersected value is "+set1[i]);
 				}
 		}
