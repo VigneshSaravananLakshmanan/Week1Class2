@@ -6,46 +6,31 @@ public class MissingElementInAnArray {
 	
 	public static void main(String[] args) {
 		
-		// Here is the input
 		int[] arr = {1,2,3,4,7,6,8};
-		
+		/*Sorting the array in ascending order where Array is a class and sort is a method of the class */
 		Arrays.sort(arr);
 		
+		/* To find the length of the array the property arrayname.length is used which returns an integer value*/
 		int length = arr.length;
 		
-		/*for(int i=0; i< length-1; i++)
+		int firstnum = arr[0];
+		int lastnum = arr[length-1];
+		
+		/* Inorder to find the missing number, the current number is compared with a next number ie, current number+1)*/
+		
+		int nextnum = firstnum+1;
+		
+		while(nextnum<=lastnum)
 		{
-			System.out.println(arr[i]);
-		}*/
-		
-		/*Required clarification - Arrays.sort() will sort the array in ascending order. Is it possible to 
-		 * save the result in another array ?
-		 * for eg:
-		 * int[] sorted = Arrays.sort(arr); */
-		
-//		
-		
-		/* Required Clarification: When I use the while statement, I am not getting the expected result. But on using the if loop in the below
-		 * code, the result is acheived. I am unable to plot the exact issue as for me both these functionality almost looks similar.
-		 */
-//		for (int i=1; i<=length;i++)
-//		{
-//			while(i!=arr[i-1])
-//			{
-//				System.out.println(i);
-//				
-//			}
-		
-		/*Required assistance on how to set the break points and debug the flows*/
-			
-			for (int i=1; i<=length;i++)
+			/*Binary search method of the class is used to search for  the vaues within the array and compare it with the value to be identified. If
+			 * the condition matches, then it will return the index value of the array. if it doesnt match, then the value -1 will be returned.(/
+			 */
+			if (Arrays.binarySearch(arr, nextnum)<0)
 			{
-				if(i!=arr[i-1])
-				{
-					System.out.println(i);
-					break;
-					
-				}
+				System.out.println("The missing number is "+nextnum);
+			}
+			nextnum++;
+		}
 			
 			
 		}
@@ -53,5 +38,3 @@ public class MissingElementInAnArray {
 		
 	}
 
-
-}
