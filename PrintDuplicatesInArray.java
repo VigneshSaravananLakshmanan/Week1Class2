@@ -3,7 +3,7 @@ package week1.day2;
 public class PrintDuplicatesInArray {
 	
 	public static void main(String[] args) {
-		int[] arr = {14,12,13,11,15,14,18,16,17,19,18,17,20};
+		int[] arr = {14,12,13,11,15,14,18,16,17,19,18,17,20,14};
 		int length = arr.length;
 		int count;
 		 for (int i=0;i<length;i++)
@@ -21,7 +21,7 @@ public class PrintDuplicatesInArray {
 			 
 			 if (count>0)
 			 {
-				 System.out.println("The duplicate value in the list is"+arr[i]);
+				 System.out.println("The duplicate value in the list is"+" "+arr[i]+" "+"which gets duplicated"+" "+count+" "+"times");
 			 }
 			 
 			 

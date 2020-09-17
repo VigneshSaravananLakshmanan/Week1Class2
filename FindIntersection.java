@@ -7,6 +7,7 @@ public class FindIntersection {
 		int[] set1 = {3,2,11,4,6,7};
 		int[] set2 = {1,2,8,4,9,7};
 		int length =set1.length;
+		String result = "";
 		
 		for (int i=0; i< length; i++)
 		{
@@ -14,11 +15,16 @@ public class FindIntersection {
 				
 				if (set1[i]==set2[j])
 				{
-					/* Clarification: how to print the result in one single line? for example -The intersected value is 1,4, 7 */
-					System.out.println("The intersected value is "+set1[i]);
+					
+					System.out.println("The intersected value is "+set1[i]);  
+					
+					/* the integer array value is converted into string using concatenation +"". this is to print the results
+					 * in a single line eg: 1, 4, 7 */
+					result = result+set1[i] +""+",";
 				}
 		}
 		
+		System.out.println("The missing numbers are "+result);
 		
 		
 	}
